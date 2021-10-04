@@ -18,6 +18,7 @@ public class Class {
         this.tietBatDau = tietBatDau;
         this.soTiet = soTiet;
         this.date = date;
+        this.isFast = false;
     }
     public Class(String name, String room, int tietBatDau, int soTiet, int date,boolean isFast) {
         Name = name;
@@ -26,6 +27,14 @@ public class Class {
         this.soTiet = soTiet;
         this.date = date;
         this.isFast = isFast;
+    }
+
+    public boolean isFast() {
+        return isFast;
+    }
+
+    public void setFast(boolean fast) {
+        isFast = fast;
     }
 
     public String getName() {
